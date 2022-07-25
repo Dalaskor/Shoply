@@ -387,6 +387,7 @@ img {
 
 .main {
   margin-top: 50px;
+  margin-bottom: 95px;
 }
 .main__body {
   display: flex;
@@ -717,4 +718,65 @@ img {
 }
 .product__price {
   font-weight: 400;
+}
+
+.footer {
+  background: #484543;
+  padding: 73px 0px 84px 0px;
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.footer__title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer__logo {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+.footer__copyright {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: opacity 0.4s;
+}
+.footer__link:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.footer__link:nth-child(1) {
+  background: url("./../img/icons/facebook.png") no-repeat center center;
+}
+.footer__link:nth-child(2) {
+  background: url("./../img/icons/instagram.png") no-repeat center center;
+}
+.footer__link:nth-child(3) {
+  background: url("./../img/icons/twitter.png") no-repeat center center;
+}
+.footer__link:nth-child(4) {
+  background: url("./../img/icons/youtube.png") no-repeat center center;
 }
