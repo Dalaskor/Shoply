@@ -36,9 +36,9 @@
                 </div>
                 <div class="header__buttons">
                     <a href="#" class="header__cart">
-                        <object data="./img/icons/cart.svg" type="image/svg+xml">
+                        <!-- <object data="./img/icons/cart.svg" type="image/svg+xml">
                             Your browser doesn't support SVG!
-                        </object>
+                        </object> -->
                     </a>
                     <a href="#" class="header__login button button_login">
                         Login
@@ -59,46 +59,143 @@
         </section>
         <main class="main">
             <div class="main__container">
-                <aside class="sidebar">
-                    <p class="sidebar__title">Filter</p>
-                    <div class="sidebar__body">
-                        <div class="sidebar__categories categories">
-                            <p class="categories__title">Product Category</p>
-                            <div class="categories__list">
-                                <div class="categories__item">
-                                    <input type="checkbox" name="electronic" id="checkElectronic" class="categories__check custom-checkbox">
-                                    <label for="checkElectronic" class="categories__name">Electronic</label>
+                <div class="main__body">
+                    <aside class="sidebar">
+                        <p class="sidebar__title">Filter</p>
+                        <div class="sidebar__body">
+                            <div class="sidebar__categories categories">
+                                <p class="categories__title">Product Category</p>
+                                <div class="categories__list">
+                                    <div class="categories__item">
+                                        <input type="checkbox" name="electronic" id="checkElectronic" class="categories__check custom-checkbox">
+                                        <label for="checkElectronic" class="categories__name">Electronic</label>
+                                    </div>
+                                    <div class="categories__item">
+                                        <input type="checkbox" name="jawely" id="checkJawely" class="categories__check custom-checkbox">
+                                        <label for="checkJawely" class="categories__name">Jawely</label>
+                                    </div>
+                                    <div class="categories__item">
+                                        <input type="checkbox" name="wclothing" id="checkWclothing" class="categories__check custom-checkbox">
+                                        <label for="checkWclothing" class="categories__name">Women's Clothing</label>
+                                    </div>
+                                    <div class="categories__item">
+                                        <input type="checkbox" name="mclothing" id="checkMclothing" class="categories__check custom-checkbox">
+                                        <label for="checkMclothing" class="categories__name">Men's Clothing</label>
+                                    </div>
                                 </div>
-                                <div class="categories__item">
-                                    <input type="checkbox" name="jawely" id="checkJawely" class="categories__check custom-checkbox">
-                                    <label for="checkJawely" class="categories__name">Jawely</label>
-                                </div>
-                                <div class="categories__item">
-                                    <input type="checkbox" name="wclothing" id="checkWclothing" class="categories__check custom-checkbox">
-                                    <label for="checkWclothing" class="categories__name">Women's Clothing</label>
-                                </div>
-                                <div class="categories__item">
-                                    <input type="checkbox" name="mclothing" id="checkMclothing" class="categories__check custom-checkbox">
-                                    <label for="checkMclothing" class="categories__name">Men's Clothing</label>
+                            </div>
+                            <div class="sidebar__price">
+                                <p class="sidebar__price-title">Price range</p>
+                                <div class="sidebar__price-body">
+                                    <div class="sidebar__price-range">
+                                        <input type="text" class="sidebar__price-input" value="$0">
+                                        <input type="text" class="sidebar__price-input" value="$400">
+                                    </div>
+                                    <button class="sidebar__setprice button">Set Price</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="sidebar__price">
-                            <p class="sidebar__price-title">Price range</p>
-                            <div class="sidebar__price-body">
-                                <div class="sidebar__price-range">
-                                    <input type="text" class="sidebar__price-input" value="$0">
-                                    <input type="text" class="sidebar__price-input" value="$400">
-                                </div>
-                                <button class="sidebar__setprice button">Set Price</button>
+                        <button class="sidebar__clear button button_inverse">Clear Filter</button>
+                    </aside>
+                    <section class="products">
+                        <input type="text" class="products__search" value="Mouse">
+                        <div class="products__sortbox">
+                            <p class="products__result">Search result for <span class="products__keyword">"Mouse"</span></p>
+                            <div class="products__sorting">
+                                <label for="sortby" class="products__sortby">Sort by</label>
+                                <select name="sortby" id="sortby" class="products__select-sort custom-select">
+                                    <option class="custom-select__item" value="name">Name (A-Z)</option>
+                                    <option class="custom-select__item" value="price">Price</option>
+                                    <option class="custom-select__item" value="population">Population</option>
+                                </select>
                             </div>
                         </div>
-                    </div>
-                    <button class="sidebar__clear button button_inverse">Clear Filter</button>
-                </aside>
-                <section class="products">
-
-                </section>
+                        <div class="products__body">
+                            <div class="products__list">
+                                <div class="products__item product">
+                                    <div class="product__body">
+                                        <a href="#" class="product__detail">Detail</a>
+                                        <a href="#" class="product__cart"></a>
+                                    </div>
+                                    <div class="product__title">
+                                        <p class="product__name">Logitech G102</p>
+                                        <p class="product__price">$34.00</p>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <div class="product__body">
+                                        <a href="#" class="product__detail">Detail</a>
+                                        <a href="#" class="product__cart"></a>
+                                    </div>
+                                    <div class="product__title">
+                                        <p class="product__name">Logitech G102</p>
+                                        <p class="product__price">$34.00</p>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <div class="product__body">
+                                        <a href="#" class="product__detail">Detail</a>
+                                        <a href="#" class="product__cart"></a>
+                                    </div>
+                                    <div class="product__title">
+                                        <p class="product__name">Logitech G102</p>
+                                        <p class="product__price">$34.00</p>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <div class="product__body">
+                                        <a href="#" class="product__detail">Detail</a>
+                                        <a href="#" class="product__cart"></a>
+                                    </div>
+                                    <div class="product__title">
+                                        <p class="product__name">Logitech G102</p>
+                                        <p class="product__price">$34.00</p>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <div class="product__body">
+                                        <a href="#" class="product__detail">Detail</a>
+                                        <a href="#" class="product__cart"></a>
+                                    </div>
+                                    <div class="product__title">
+                                        <p class="product__name">Logitech G102</p>
+                                        <p class="product__price">$34.00</p>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <div class="product__body">
+                                        <a href="#" class="product__detail">Detail</a>
+                                        <a href="#" class="product__cart"></a>
+                                    </div>
+                                    <div class="product__title">
+                                        <p class="product__name">Logitech G102</p>
+                                        <p class="product__price">$34.00</p>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <div class="product__body">
+                                        <a href="#" class="product__detail">Detail</a>
+                                        <a href="#" class="product__cart"></a>
+                                    </div>
+                                    <div class="product__title">
+                                        <p class="product__name">Logitech G102</p>
+                                        <p class="product__price">$34.00</p>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <div class="product__body">
+                                        <a href="#" class="product__detail">Detail</a>
+                                        <a href="#" class="product__cart"></a>
+                                    </div>
+                                    <div class="product__title">
+                                        <p class="product__name">Logitech G102</p>
+                                        <p class="product__price">$34.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
         </main>
     </div>

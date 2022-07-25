@@ -159,6 +159,12 @@ img {
   width: 28.72px;
   height: 32px;
   display: block;
+  background: url("./../img/icons/cart.svg") no-repeat center center;
+  transition: opacity 0.4s;
+}
+.header__cart:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 @media (max-width: 767.98px) {
   .burger {
@@ -229,12 +235,11 @@ img {
     padding-bottom: 40px;
     position: absolute;
     top: 109px;
-    left: 0;
     background: #F8F8F8;
     box-shadow: #ccc;
     width: 100%;
     box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
-    left: 100%;
+    left: -100%;
     transition: all 0.4s ease;
   }
   .menu__list.open-menu {
@@ -383,13 +388,27 @@ img {
 .main {
   margin-top: 50px;
 }
+.main__body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
 
 .sidebar {
   display: flex;
   flex-direction: column;
   gap: 63px;
-  max-width: 291px;
-  padding: 0px 35px;
+  padding: 0 35px;
+}
+@media (max-width: 992.98px) {
+  .sidebar {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .sidebar {
+    display: none;
+  }
 }
 .sidebar__title {
   font-family: "Roboto";
@@ -522,4 +541,180 @@ img {
 }
 .custom-checkbox:disabled + label::after {
   background-color: #e9ecef;
+}
+
+.products {
+  width: 100%;
+  border-left: 1px solid #EBEBEB;
+  padding-left: 57px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 992.98px) {
+  .products {
+    padding-left: 0;
+    border-left: none;
+  }
+}
+.products__search {
+  max-width: 100%;
+  height: 56px;
+  background: url("./../img/icons/search.svg") no-repeat 23px center;
+  background-color: #F5F7FB;
+  border-radius: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 132%;
+  letter-spacing: 0.015em;
+  color: #616467;
+  padding-left: 88px;
+}
+.products__sortbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.products__result {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 132%;
+  letter-spacing: 0.015em;
+  color: #000000;
+}
+.products__keyword {
+  font-weight: 700;
+}
+.products__sorting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.products__sortby {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 132%;
+  letter-spacing: 0.015em;
+  color: #616467;
+}
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 31px;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (max-width: 479.98px) {
+  .products__list {
+    justify-content: center;
+  }
+}
+.custom-select {
+  width: 127.82px;
+  height: 25px;
+  background: #FFFFFF;
+  border: 0.5px solid #ACACAC;
+  border-radius: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 132%;
+  letter-spacing: 0.015em;
+  color: #616467;
+}
+
+.product {
+  width: 203.44px;
+  height: 332.8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product:nth-child(1) .product__body {
+  background-image: url("./../img/products/mouse_1.png");
+}
+.product:nth-child(2) .product__body {
+  background-image: url("./../img/products/mouse_2.png");
+}
+.product:nth-child(3) .product__body {
+  background-image: url("./../img/products/mouse_3.png");
+}
+.product:nth-child(4) .product__body {
+  background-image: url("./../img/products/mouse_4.png");
+}
+.product:nth-child(5) .product__body {
+  background-image: url("./../img/products/mouse_5.png");
+}
+.product:nth-child(6) .product__body {
+  background-image: url("./../img/products/mouse_6.png");
+}
+.product:nth-child(7) .product__body {
+  background-image: url("./../img/products/mouse_7.png");
+}
+.product:nth-child(8) .product__body {
+  background-image: url("./../img/products/mouse_8.png");
+}
+.product__body {
+  width: 203.44px;
+  height: 296.8px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 11px 25px;
+}
+.product__detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 104.37px;
+  height: 25.56px;
+  background: #211F1C;
+  border-radius: 10px;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #FFFFFF;
+  transition: opacity 0.4s;
+}
+.product__detail:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.product__cart {
+  display: block;
+  width: 39.33px;
+  height: 25.56px;
+  background: url("./../img/icons/cart_product.svg") no-repeat center center;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  transition: opacity 0.4s;
+}
+.product__cart:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.product__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #616467;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 57px;
+}
+.product__price {
+  font-weight: 400;
 }
