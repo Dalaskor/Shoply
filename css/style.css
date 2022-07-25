@@ -135,7 +135,7 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: calc(25px + 5 * ((100vw - 320px) / 969));
   line-height: 35px;
   color: #334756;
   transition: opacity 0.4s;
@@ -305,6 +305,23 @@ img {
 }
 
 .button {
+  width: 215.16px;
+  height: 36px;
+  background: #211F1C;
+  border-radius: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 132%;
+  letter-spacing: 0.015em;
+  color: #FFFFFF;
+}
+.button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.button_login {
   width: 113px;
   height: 40px;
   background: #211F1C;
@@ -319,7 +336,190 @@ img {
   color: #FFFFFF;
   transition: opacity 0.4s;
 }
-.button:hover {
-  cursor: pointer;
-  opacity: 0.8;
+.button_inverse {
+  border: 1px solid #000000;
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.path {
+  margin-top: 40px;
+}
+.path__container {
+  padding: 24px 19px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.path__list {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+}
+.path__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(25px + 7 * ((100vw - 320px) / 969));
+  line-height: 38px;
+  color: #616467;
+  transition: opacity 0.4s;
+}
+.path__link:hover {
+  opacity: 0.7;
+}
+.path__link.selected {
+  font-weight: 700;
+}
+.path__separator {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(25px + 7 * ((100vw - 320px) / 969));
+  line-height: 38px;
+  color: #616467;
+}
+
+.main {
+  margin-top: 50px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 63px;
+  max-width: 291px;
+  padding: 0px 35px;
+}
+.sidebar__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 132%;
+  letter-spacing: 0.015em;
+  color: #000000;
+}
+.sidebar__body {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+.sidebar__price {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.sidebar__price-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebar__price-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 132%;
+  letter-spacing: 0.015em;
+  color: #000000;
+}
+.sidebar__price-range {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar__price-input {
+  width: 101.19px;
+  height: 31px;
+  display: block;
+  background: #FFFFFF;
+  border: 1px solid #C5C5C5;
+  border-radius: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 132%;
+  letter-spacing: 0.015em;
+  color: #000000;
+  text-align: center;
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.categories__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 132%;
+  letter-spacing: 0.015em;
+  color: #000000;
+}
+.categories__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.categories__name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 132%;
+  letter-spacing: 0.015em;
+  color: #616467;
+}
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-checkbox + label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.custom-checkbox + label::after {
+  content: "";
+  display: block;
+  width: 15.98px;
+  height: 15px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1.5px solid #616467;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  transition: 0.3s;
+}
+.custom-checkbox:checked + label::after {
+  border-color: #211F1C;
+  background-color: #211F1C;
+  background-image: url("./../img/icons/check.svg");
+}
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::after {
+  border-color: #211F1C;
+}
+.custom-checkbox:not(:disabled):active + label::after {
+  border-color: #211F1C;
+  background-color: #211F1C;
+}
+.custom-checkbox:focus + label::after {
+  box-shadow: 0 0 0 0.2rem rgba(45, 45, 45, 0.25);
+}
+.custom-checkbox:focus:not(:checked) + label::after {
+  border-color: #211F1C;
+}
+.custom-checkbox:disabled + label::after {
+  background-color: #e9ecef;
 }

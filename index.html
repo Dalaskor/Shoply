@@ -46,6 +46,61 @@
                 </div>
             </div>
         </header>
+        <section class="path">
+            <div class="path__container">
+                <ul class="path__list">
+                    <li class="path__item">
+                        <li><a href="#" class="path__link">Home</a></li>
+                        <span class="path__separator">&gt;</span>
+                        <li><a href="#" class="path__link selected">Product</a></li>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <main class="main">
+            <div class="main__container">
+                <aside class="sidebar">
+                    <p class="sidebar__title">Filter</p>
+                    <div class="sidebar__body">
+                        <div class="sidebar__categories categories">
+                            <p class="categories__title">Product Category</p>
+                            <div class="categories__list">
+                                <div class="categories__item">
+                                    <input type="checkbox" name="electronic" id="checkElectronic" class="categories__check custom-checkbox">
+                                    <label for="checkElectronic" class="categories__name">Electronic</label>
+                                </div>
+                                <div class="categories__item">
+                                    <input type="checkbox" name="jawely" id="checkJawely" class="categories__check custom-checkbox">
+                                    <label for="checkJawely" class="categories__name">Jawely</label>
+                                </div>
+                                <div class="categories__item">
+                                    <input type="checkbox" name="wclothing" id="checkWclothing" class="categories__check custom-checkbox">
+                                    <label for="checkWclothing" class="categories__name">Women's Clothing</label>
+                                </div>
+                                <div class="categories__item">
+                                    <input type="checkbox" name="mclothing" id="checkMclothing" class="categories__check custom-checkbox">
+                                    <label for="checkMclothing" class="categories__name">Men's Clothing</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar__price">
+                            <p class="sidebar__price-title">Price range</p>
+                            <div class="sidebar__price-body">
+                                <div class="sidebar__price-range">
+                                    <input type="text" class="sidebar__price-input" value="$0">
+                                    <input type="text" class="sidebar__price-input" value="$400">
+                                </div>
+                                <button class="sidebar__setprice button">Set Price</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="sidebar__clear button button_inverse">Clear Filter</button>
+                </aside>
+                <section class="products">
+
+                </section>
+            </div>
+        </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/main.js"></script>
