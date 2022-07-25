@@ -1,0 +1,45 @@
+@import "normalize";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+// Враппер
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+// Растягивание контента для прижатого футера
+.main {
+    flex: 1 1 auto;
+}
+
+// Блокирование скролла
+.sroll-lock{
+    overflow: hidden;
+}
+
+// Ограничивающий контейнер
+[class*="__container"] {
+    max-width: 1087px; // Ширина контейнера в макете + 15px * 2 из padding
+    margin: 0px auto;
+    padding: 0px 15px; // Отступы безопасности для адаптива
+    
+    // Брейпоинты для адаптива
+    /* PC */
+    @media (max-width: 1087px) {
+        max-width: 970px;
+    }
+    /* TABLET */
+    @media (max-width: 992.98px) {
+        max-width: 750px;
+    }
+    /* MOBILE */
+    @media (max-width: 767.98px) {
+        max-width: none;
+    }
+    /* MOBILE */
+    @media (max-width: 479.98px) {
+        max-width: none;
+    }
+}
