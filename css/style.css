@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.sroll-lock {
+  overflow: hidden;
+}
+
+[class*=__container] {
+  max-width: 1289px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  /* PC */
+  /* TABLET */
+  /* MOBILE */
+  /* MOBILE */
+}
+@media (max-width: 1087px) {
+  [class*=__container] {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992.98px) {
+  [class*=__container] {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98px) {
+  [class*=__container] {
+    max-width: none;
+  }
+}
+@media (max-width: 479.98px) {
+  [class*=__container] {
+    max-width: none;
+  }
+}
+
+.header {
+  background: #F8F8F8;
+  padding-top: 44px;
+  padding-bottom: 31px;
+}
+@media (max-width: 767.98px) {
+  .header {
+    padding: 0;
+  }
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767.98px) {
+  .header__container {
+    padding: 0;
+  }
+}
+.header__logo {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #334756;
+  transition: opacity 0.4s;
+}
+.header__logo:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.header__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 60px;
+}
+@media (max-width: 767.98px) {
+  .header__buttons {
+    display: none;
+  }
+}
+.header__cart {
+  width: 28.72px;
+  height: 32px;
+  display: block;
+}
+@media (max-width: 767.98px) {
+  .burger {
+    width: 114.19px;
+    height: 109px;
+    background: #393D45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .burger__button {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    display: block;
+  }
+  .burger__button span, .burger__button::after, .burger__button::before {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #F4F4F4;
+    margin: 0 auto;
+    transition: 0.4s;
+  }
+  .burger__button span {
+    top: 10.5px;
+  }
+  .burger__button::after, .burger__button::before {
+    content: "";
+  }
+  .burger__button::after {
+    bottom: 0px;
+  }
+  .burger__button::before {
+    top: 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .burger__button.open-menu span {
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .burger__button.open-menu::before {
+    transform: rotate(45deg);
+    top: 50%;
+    transition: 0.4s;
+  }
+  .burger__button.open-menu::after {
+    transform: rotate(-45deg);
+    top: 50%;
+    transition: 0.4s;
+  }
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+@media (max-width: 767.98px) {
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: absolute;
+    top: 109px;
+    left: 0;
+    background: #F8F8F8;
+    box-shadow: #ccc;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
+    left: 100%;
+    transition: all 0.4s ease;
+  }
+  .menu__list.open-menu {
+    left: 0;
+  }
+}
+.menu__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5E5E5E;
+  transition: 0.3s;
+}
+.menu__link::after {
+  display: block;
+  position: relative;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #5E5E5E;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+.menu__link:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+.menu__link:focus {
+  font-weight: 700;
+}
+.menu__link:hover::after, .menu__link:focus::after {
+  width: 100%;
+}
+.menu__link_fucused {
+  font-weight: 700;
+}
+.menu__link_fucused::after {
+  display: block;
+  position: relative;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #5E5E5E;
+  content: "";
+  transition: width 0.3s ease-out;
+  width: 100%;
+}
+.menu__separator {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5E5E5E;
+}
+@media (max-width: 767.98px) {
+  .menu__separator {
+    display: none;
+  }
+}
+
+.button {
+  width: 113px;
+  height: 40px;
+  background: #211F1C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  transition: opacity 0.4s;
+}
+.button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
