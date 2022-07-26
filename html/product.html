@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/style.css">
+    <title>Shoply</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="./../index.html" class="header__logo">Shoply.</a>
+                <div class="header__menu menu">
+                    <div class="menu__burger burger">
+                        <div class="burger__button">
+                            <span></span>
+                        </div>
+                    </div>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Home</a>
+                            </li>
+                            <span class="menu__separator">/</span>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link_fucused">Products</a>
+                            </li>
+                            <span class="menu__separator">/</span>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">About</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__buttons">
+                    <a href="#" class="header__cart">
+                        <!-- <object data="./img/icons/cart.svg" type="image/svg+xml">
+                            Your browser doesn't support SVG!
+                        </object> -->
+                    </a>
+                    <a href="#" class="header__login button button_login">
+                        Login
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section class="path">
+            <div class="path__container">
+                <ul class="path__list">
+                    <li class="path__item">
+                        <li><a href="#" class="path__link">Home</a></li>
+                        <span class="path__separator">&gt;</span>
+                        <li><a href="#" class="path__link">Product</a></li>
+                        <span class="path__separator">&gt;</span>
+                        <li><a href="#" class="path__link selected">Mouse</a></li>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <main class="main">
+            <section class="fullproduct">
+                <div class="fullproduct__container">
+                    <div class="fullproduct__image">
+                        <img src="./../img/products/mouse_photo.png" alt="Mouse photo" class="fullproduct__img">
+                    </div>
+                    <div class="fullproduct__body">
+                        <div class="fullproduct__title">Razer X89</div>
+                        <p class="fullproduct__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh erat
+                        </p>
+                        <p class="fullproduct__stock">Stock: 75</p>
+                        <p class="fullproduct__price">Price: <span>$55</span></p>
+                        <div class="fullproduct__addcart">
+                            <div class="fullproduct__counts">
+                                <button class="fullproduct__btncart">-</button>
+                                <input type="text" class="fullproduct__count" value="1" readonly>
+                                <button class="fullproduct__btncart">+</button>
+                            </div>
+                            <button class="fullproduct__btn-addcart button button_add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__title">
+                    <a href="#" class="footer__logo">Shoply.</a>
+                    <p class="footer__copyright">© Copyright 2021. Created by OurTeam</p>
+                </div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__link"></a>
+                    <a href="#" class="footer__link"></a>
+                    <a href="#" class="footer__link"></a>
+                    <a href="#" class="footer__link"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./../js/main.js"></script>
+</body>
+</html>
